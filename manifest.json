@@ -1,0 +1,19 @@
+{
+  "name": "OmniPlan Reisplanner",
+  "short_name": "OmniPlan",
+  "manifest_version": 2,
+  "description" : "Plan je reis vanuit de adresbalk.",
+  "version": "0.01",
+  
+  "background": {
+    "scripts": ["background.js"],
+	"persistent": false
+  },
+  "omnibox": { "keyword" : "9292" },
+  "icons": { 
+	"16": "assets/icon_16.png",
+  "128": "assets/icon_128.png"
+	},
+  "permissions": [ "tabs" ],
+  "offline_enabled": false
+}
