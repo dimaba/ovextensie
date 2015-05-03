@@ -1,9 +1,9 @@
 {
-  "name": "OmniPlan Reisplanner",
-  "short_name": "OmniPlan",
+  "name": "OmniBus Reisplanner",
+  "short_name": "OmniBus",
   "manifest_version": 2,
-  "description" : "Plan je reis vanuit de adresbalk.",
-  "version": "0.01",
+  "description" : "Plan je reis met het OV vanuit de adresbalk.",
+  "version": "0.10",
   
   "background": {
     "scripts": ["background.js"],
