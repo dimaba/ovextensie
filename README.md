@@ -40,6 +40,8 @@ Bedoelde je de bushalte Grote Markt in Groningen, of bedoelde je het adres Grote
 of bedoelde je een van de bijbehorende bus/tramhaltes? De tussenstop Deventer is direct herkend als station Deventer. Als je aangeeft welke precieze locatie
 je bedoelt krijg je reisadvies te zien.
 
+Op https://youtu.be/cZ_-IU14gD8 vind je een filmpje met meer voorbeelden.
+
 ### Hoe werkt dit eigenlijk?
 De OmniBus Reisplanner maakt zelf geen reisadvies voor je. Daarvoor wordt gebruik gemaakt van 9292ov.nl. De webadressen van reisadviezen op 9292ov.nl hebben een vaste structuur.
 Deze extensie zet jouw ingetypete reisplan om in een webadres dat door 9292ov.nl herkend wordt. Je hoeft hierdoor niet meer zelf naar 9292ov.nl te navigeren 
@@ -51,4 +53,4 @@ doorgestuurd naar het passende reisadvies op 9292ov.nl.
 
 ## Geplande functies en bekende problemen
 - Straat- of plaatsnamen waarin één van de herkende steekwoorden voorkomen (zoals 'Van Egmondstraat') worden niet goed verwerkt. Aan een oplossing wordt gewerkt.
-- Op dit moment is het alleen mogelijk om een reis te plannen met een bepaald *vertrek*moment. In de toekomst moet het ook mogelijk zijn om een reis te plnnen met een bepaald *aankomst*moment.
+- Op dit moment is het alleen mogelijk om een reis te plannen met een bepaald *vertrek*moment. In de toekomst moet het ook mogelijk zijn om een reis te plannen met een bepaald *aankomst*moment.
