@@ -58,7 +58,7 @@ function process_date(datestring) {
 function process_time(timestring) {
     var timestring_return;
     var r_time_words = /\b[0-9]{1,2}(\s)?(uur|u|hr)(\s[0-9]{2})?/ig;
-    var r_time_numbers = /\b[0-9]{1,2}[.][0-9]{2}/ig;
+    var r_time_numbers = /\b[0-9]{1,2}[.:][0-9]{2}/ig;
     var r_numberparts = /[0-9]+/ig;
     var time;
     var splittime;
