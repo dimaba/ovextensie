@@ -8,11 +8,12 @@ De reisplanner is in twee stappen te gebruiken.
 
 ### Steekwoorden
 De reisplanner herkent vijf steekwoorden: 
-1. Van - Geeft de vertreklocatie aan (verplicht)
-2. Naar - Geeft de bestemming aan (verplicht)
-3. Via - Geeft een tussenstop aan
-4. Op - Geeft de vertrekdatum aan
-5. Om - Geeft de vertrektijd aan
+
+1. Van: Geeft de vertreklocatie aan (verplicht)
+2. Naar: Geeft de bestemming aan (verplicht)
+3. Via: Geeft een tussenstop aan
+4. Op: Geeft de vertrekdatum aan
+5. Om: Geeft de vertrektijd aan
 
 Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van Utrecht naar Amersfoort' als 'naar Amersfoort van Utrecht' goed herkend.
 Voor elk reisplan moet een vertreklocatie ('van') en een bestemming ('naar') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
@@ -25,6 +26,7 @@ De vertreklocatie en bestemming kunnen stations, bushaltes, postcodes of adresse
 
 ### Voorbeeld
 Type in je adresbalk bijvoorbeeld 'van grote markt groningen naar de dam amsterdam via deventer op 10 mei 2015 om 12 uur', dan gebeurt er het volgende:
+
 1. Je vertreklocatie wordt herkend als 'grote markt groningen'
 2. Je bestemming wordt herkend als 'de dam amsterdam'
 3. Je tussenstop wordt herkend als 'deventer' 
