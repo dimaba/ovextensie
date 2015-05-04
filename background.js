@@ -135,13 +135,13 @@ function process_text(text) {
 			components[i] = getcomponent(components[i].name, splittext);
 		}
 		// set date and time if entered in text, otherwise use now
-		if (components[0]) {components[0] = components[0].join("-");}
+		if (components[0]) {components[0] = components[0].join(" ");}
 		else {
 		  //getMonth() returns dates numbered from 0
 		  components[0] = [now.getDate(), now.getMonth()+1, now.getFullYear()];
 		  components[0] = components[0].join("-");
 		}
-		if (components[1]) {components[1] = components[1].join(".");}
+		if (components[1]) {components[1] = components[1].join(" ");}
 		else {
 		  components[1] = [now.getHours(), now.getMinutes()];
 		  if (components[1][1].toString().length === 1) {components[1][1] = "0" + components[1][1];}
