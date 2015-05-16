@@ -8,7 +8,7 @@ chrome.omnibox.onInputChanged.addListener(
 	text = text.trim();
     suggest([
       //{content: "http://reddit.com/r/" + text.replace(" ",""), description: "Goto /r/" + text.replace(" ","")},
-	  //{content: "-m", description: "View extension information and keywords"}
+	  {content: text, description: "BLANK"}
     ]);
   });
   
@@ -99,7 +99,7 @@ function process_text(text) {
 	var now = new Date();
 	
 	function nextkeyword(splittext){
-	    var keywords = ["van", "naar", "via", "op", "om"];
+	    var keywords = ["van:", "naar:", "via:", "op:", "om:"];
 		for (var i = 0; i < splittext.length; i++){
 			if (keywords.indexOf(splittext[i]) !== -1) {
 				return splittext.slice(0,i);
@@ -125,11 +125,11 @@ function process_text(text) {
 	if (urlSet === false) 
 	{	
         components = [
-        	{name: "op", value: null},
-        	{name: "om", value: null},
-        	{name: "van", value: null},
-        	{name: "naar", value: null},
-        	{name: "via", value: null}
+        	{name: "op:", value: null},
+        	{name: "om:", value: null},
+        	{name: "van:", value: null},
+        	{name: "naar:", value: null},
+        	{name: "via:", value: null}
         ];
 		for (var i = 0; i < components.length; i++) {
 			components[i] = getcomponent(components[i].name, splittext);

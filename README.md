@@ -7,13 +7,14 @@ De reisplanner is in twee stappen te gebruiken.
 2. Je kunt nu je reisplan intypen in de adresbalk. Druk daarna op 'enter'. Je wordt nu doorgestuurd naar de website van 9292ov waar je reisadvies voor je klaarstaat.
 
 ### Steekwoorden
+#### Let op! Sinds de meest recente update (versie 0.50) moeten alle steekwoorden gevolgd worden door een dubbele punt (bijv. 'van:') om herkend te worden
 De reisplanner herkent vijf steekwoorden: 
 
-1. Van: Geeft de vertreklocatie aan (verplicht)
-2. Naar: Geeft de bestemming aan (verplicht)
-3. Via: Geeft een tussenstop aan
-4. Op: Geeft de vertrekdatum aan
-5. Om: Geeft de vertrektijd aan
+1. Van: geeft de vertreklocatie aan (verplicht)
+2. Naar: geeft de bestemming aan (verplicht)
+3. Via: geeft een tussenstop aan
+4. Op: geeft de vertrekdatum aan
+5. Om: geeft de vertrektijd aan
 
 Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van Utrecht naar Amersfoort' als 'naar Amersfoort van Utrecht' goed herkend.
 Voor elk reisplan moet een vertreklocatie ('van') en een bestemming ('naar') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
@@ -25,7 +26,7 @@ De tijd aangeven kan in de vorm '20 uur 45' of in de vorm '20.25' of '20:45'. De
 De vertreklocatie en bestemming kunnen stations, bushaltes, postcodes of adressen zijn.
 
 ### Voorbeeld
-Type in je adresbalk bijvoorbeeld 'van grote markt groningen naar de dam amsterdam via deventer op 10 mei 2015 om 12 uur', dan gebeurt er het volgende:
+Type in je adresbalk bijvoorbeeld 'van: grote markt groningen naar: de dam amsterdam via: deventer op: 10 mei 2015 om: 12 uur', dan gebeurt er het volgende:
 
 1. Je vertreklocatie wordt herkend als 'grote markt groningen'
 2. Je bestemming wordt herkend als 'de dam amsterdam'
@@ -49,8 +50,8 @@ en daar alle gevraagde velden in te vullen. In plaats daarvan kan je in gewoon N
 doorgestuurd naar het passende reisadvies op 9292ov.nl.
 
 ## Versiegeschiedenis
+- v0.50: Straatnamen waarin een of meerdere steekwoorden voorkomen worden nu ook herkend. Om dit op te lossen moeten steekwoorden in het reisplan met een dubbele punt geschreven worden (bijvoorbeeld 'van:')
 - v0.40: Eerste publieke versie
 
 ## Geplande functies en bekende problemen
-- Straat- of plaatsnamen waarin één van de herkende steekwoorden voorkomen (zoals 'Van Egmondstraat') worden niet goed verwerkt. Aan een oplossing wordt gewerkt.
 - Op dit moment is het alleen mogelijk om een reis te plannen met een bepaald *vertrek*moment. In de toekomst moet het ook mogelijk zijn om een reis te plannen met een bepaald *aankomst*moment.
