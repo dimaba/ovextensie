@@ -148,8 +148,9 @@ function process_text(text) {
 		  components[1] = components[1].join(".");
 		}
 		// van and naar must always be set
-		components[2] = components[2].join("-");
-		components[3] = components[3].join("-");
+		if (components[2]) {components[2] = components[2].join("-");}
+		if (components[3]) {components[3] = components[3].join("-");}
+		
 		// only do for via if via is not null
 		if (components[4]) {components[4] = components[4].join("-");}
 		
@@ -177,9 +178,17 @@ chrome.omnibox.onInputEntered.addListener(
 	}
 
 	if (components) {
-	  full_url = "http://9292ov.nl/plan" + "/vertrek/" + components[0] + "T" + components[1] + "?van=" + components[2] + "&naar=" + components[3];
-    if (components[4]) {full_url = full_url + "&via=" + components[4];}
-	  urlSet = true;}
+	  if (!(components[2] && components[3]))
+		{
+		  full_url = "http://github.com/dimaba/NOKEYWORDS.md";
+		  urlSet = true;
+		}
+		else {
+		  full_url = "http://9292ov.nl/plan" + "/vertrek/" + components[0] + "T" + components[1] + "?van=" + components[2] + "&naar=" + components[3];
+      if (components[4]) {full_url = full_url + "&via=" + components[4];}
+	    urlSet = true;
+		}
+  }
 	//detect if a web address has been generated at this point and set if necessary
 	if (urlSet === false) {full_url = "http://9292ov.nl/404.html";}
 	console.log(full_url);
