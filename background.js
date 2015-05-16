@@ -180,7 +180,7 @@ chrome.omnibox.onInputEntered.addListener(
 	if (components) {
 	  if (!(components[2] && components[3]))
 		{
-		  full_url = "http://github.com/dimaba/NOKEYWORDS.md";
+		  full_url = "http://dimaba.github.io/ovextensie/steekwoorden.html";
 		  urlSet = true;
 		}
 		else {
