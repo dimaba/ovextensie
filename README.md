@@ -50,7 +50,7 @@ en daar alle gevraagde velden in te vullen. In plaats daarvan kan je in gewoon N
 doorgestuurd naar het passende reisadvies op 9292ov.nl.
 
 ## Versiegeschiedenis
-- v0.50: Straatnamen waarin een of meerdere steekwoorden voorkomen worden nu ook herkend. Om dit op te lossen moeten steekwoorden in het reisplan met een dubbele punt geschreven worden (bijvoorbeeld 'van:')
+- v0.51: Straatnamen waarin een of meerdere steekwoorden voorkomen worden nu ook herkend. Om dit op te lossen moeten steekwoorden in het reisplan met een dubbele punt geschreven worden (bijvoorbeeld 'van:')
 - v0.40: Eerste publieke versie
 
 ## Geplande functies en bekende problemen
