@@ -16,8 +16,8 @@ De reisplanner herkent vijf steekwoorden:
 4. Op: geeft de vertrekdatum aan
 5. Om: geeft de vertrektijd aan
 
-Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van Utrecht naar Amersfoort' als 'naar Amersfoort van Utrecht' goed herkend.
-Voor elk reisplan moet een vertreklocatie ('van') en een bestemming ('naar') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
+Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van: Utrecht naar: Amersfoort' als 'naar: Amersfoort van: Utrecht' goed herkend.
+Voor elk reisplan moet een vertreklocatie ('van:') en een bestemming ('naar:') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
 Als je geen tijd en geen datum invult wordt de reis 'nu' gepland. Vul je geen datum in maar wel een tijd, dan wordt de reis gepland op dezelfde
 dag om de aangegeven tijd. (En vul je geen tijd in maar wel een datum, dan wordt de reis gepland op dezelfde tijd op de aangegeven dag.)
 
