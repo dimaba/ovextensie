@@ -1,5 +1,5 @@
 # OmniBus Reisplanner
-Met de OmniBus Reisplanne plan je je reis rechtstreeks vanuit de adresbalk van je browser. Plan je reis van deur tot deur, van station tot station, op elk moment van de dag.
+Met de OmniBus Reisplanner plan je je reis rechtstreeks vanuit de adresbalk van je browser. Plan je reis van deur tot deur, van station tot station, op elk moment van de dag.
 
 ## Gebruiksaanwijzing
 De reisplanner is in twee stappen te gebruiken. 
@@ -7,19 +7,21 @@ De reisplanner is in twee stappen te gebruiken.
 2. Je kunt nu je reisplan intypen in de adresbalk. Druk daarna op 'enter'. Je wordt nu doorgestuurd naar de website van 9292ov waar je reisadvies voor je klaarstaat.
 
 ### Steekwoorden
-#### Let op! Sinds de meest recente update (versie 0.50) moeten alle steekwoorden gevolgd worden door een dubbele punt (bijv. 'van:') om herkend te worden
+#### Let op! Vanaf versie 0.50 moeten alle steekwoorden gevolgd worden door een dubbele punt (bijv. 'van:') om herkend te worden
 De reisplanner herkent vijf steekwoorden: 
 
 1. Van: geeft de vertreklocatie aan (verplicht)
 2. Naar: geeft de bestemming aan (verplicht)
 3. Via: geeft een tussenstop aan
 4. Op: geeft de vertrekdatum aan
-5. Om: geeft de vertrektijd aan
+5. Om: geeft de vertrektijd aan (als alternatief werkt 'vertrek:' ook)
+6. Aankomst: geeft de aankomsttijd aan
 
 Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van: Utrecht naar: Amersfoort' als 'naar: Amersfoort van: Utrecht' goed herkend.
 Voor elk reisplan moet een vertreklocatie ('van:') en een bestemming ('naar:') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
 Als je geen tijd en geen datum invult wordt de reis 'nu' gepland. Vul je geen datum in maar wel een tijd, dan wordt de reis gepland op dezelfde
-dag om de aangegeven tijd. (En vul je geen tijd in maar wel een datum, dan wordt de reis gepland op dezelfde tijd op de aangegeven dag.)
+dag om de aangegeven tijd. (En vul je geen tijd in maar wel een datum, dan wordt de reis gepland op dezelfde tijd op de aangegeven dag.) Geef je aan aankomsttijd op,
+dan hoef je geen vertrektijd meer aan te geven. 
 
 De tijd aangeven kan in de vorm '20 uur 45' of in de vorm '20.25' of '20:45'. De datum aangeven kan in de vorm '19 augustus 2017' of in de vorm '19-08-2017' of '19.08.2017'.
 
@@ -50,8 +52,9 @@ en daar alle gevraagde velden in te vullen. In plaats daarvan kan je in gewoon N
 doorgestuurd naar het passende reisadvies op 9292ov.nl.
 
 ## Versiegeschiedenis
+- v0.60: Reizen op aankomsttijd mogelijk. 'Vertrek:' toegevoegd als alternatief steekwoord voor 'om:'
 - v0.51: Straatnamen waarin een of meerdere steekwoorden voorkomen worden nu ook herkend. Om dit op te lossen moeten steekwoorden in het reisplan met een dubbele punt geschreven worden (bijvoorbeeld 'van:')
 - v0.40: Eerste publieke versie
 
 ## Geplande functies en bekende problemen
-- Op dit moment is het alleen mogelijk om een reis te plannen met een bepaald *vertrek*moment. In de toekomst moet het ook mogelijk zijn om een reis te plannen met een bepaald *aankomst*moment.
+-

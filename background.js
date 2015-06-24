@@ -99,7 +99,7 @@ function process_text(text) {
 	var now = new Date();
 	
 	function nextkeyword(splittext){
-	    var keywords = ["van:", "naar:", "via:", "op:", "om:"];
+	    var keywords = ["van:", "naar:", "via:", "op:", "om:", "aankomst:", "vertrek:"];
 		for (var i = 0; i < splittext.length; i++){
 			if (keywords.indexOf(splittext[i]) !== -1) {
 				return splittext.slice(0,i);
@@ -129,7 +129,9 @@ function process_text(text) {
         	{name: "om:", value: null},
         	{name: "van:", value: null},
         	{name: "naar:", value: null},
-        	{name: "via:", value: null}
+        	{name: "via:", value: null},
+        	{name: "aankomst:", value: null},
+        	{name: "vertrek:", value: null}
         ];
 		for (var i = 0; i < components.length; i++) {
 			components[i] = getcomponent(components[i].name, splittext);
@@ -141,6 +143,7 @@ function process_text(text) {
 		  components[0] = [now.getDate(), now.getMonth()+1, now.getFullYear()];
 		  components[0] = components[0].join("-");
 		}
+		if (components[6]) {components[1] = components[6];} // set 'om' to 'vertrek' if given
 		if (components[1]) {components[1] = components[1].join(" ");}
 		else {
 		  components[1] = [now.getHours(), now.getMinutes()];
@@ -154,10 +157,14 @@ function process_text(text) {
 		// only do for via if via is not null
 		if (components[4]) {components[4] = components[4].join("-");}
 		
+		// aankomst (only process if specified)
+		if (components[5]) {components[5] = components[5].join(" ");}
+
 		// process date
 		components[0] = process_date(components[0]);
 		// process time
 		components[1] = process_time(components[1]);
+		if (components[5]){components[5] = process_time(components[5]);}
 	}
 
 	return components;
@@ -177,11 +184,18 @@ chrome.omnibox.onInputEntered.addListener(
 	  components = null;
 	}
 
+  // redirect user to keyword error page if 'van' and 'naar' are not entered, else return url
 	if (components) {
 	  if (!(components[2] && components[3]))
 		{
 		  full_url = "http://dimaba.github.io/ovextensie/steekwoorden.html";
 		  urlSet = true;
+		}
+		else if (components[5])
+		{
+		  full_url = "http://9292ov.nl/plan" + "/aankomst/" + components[0] + "T" + components[5] + "?van=" + components[2] + "&naar=" + components[3];
+      if (components[4]) {full_url = full_url + "&via=" + components[4];}
+	    urlSet = true;
 		}
 		else {
 		  full_url = "http://9292ov.nl/plan" + "/vertrek/" + components[0] + "T" + components[1] + "?van=" + components[2] + "&naar=" + components[3];
