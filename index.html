@@ -35,7 +35,7 @@
 <a id="steekwoorden" class="anchor" href="#steekwoorden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Steekwoorden</h3>
 
 <h4>
-<a id="let-op-sinds-de-meest-recente-update-versie-050-moeten-alle-steekwoorden-gevolgd-worden-door-een-dubbele-punt-bijv-van-om-herkend-te-worden" class="anchor" href="#let-op-sinds-de-meest-recente-update-versie-050-moeten-alle-steekwoorden-gevolgd-worden-door-een-dubbele-punt-bijv-van-om-herkend-te-worden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Let op! Sinds de meest recente update (versie 0.50) moeten alle steekwoorden gevolgd worden door een dubbele punt (bijv. 'van:') om herkend te worden</h4>
+<a id="let-op-vanaf-versie-050-moeten-alle-steekwoorden-gevolgd-worden-door-een-dubbele-punt-bijv-van-om-herkend-te-worden" class="anchor" href="#let-op-vanaf-versie-050-moeten-alle-steekwoorden-gevolgd-worden-door-een-dubbele-punt-bijv-van-om-herkend-te-worden" aria-hidden="true"><span class="octicon octicon-link"></span></a>Let op! Vanaf versie 0.50 moeten alle steekwoorden gevolgd worden door een dubbele punt (bijv. 'van:') om herkend te worden</h4>
 
 <p>De reisplanner herkent vijf steekwoorden: </p>
 
@@ -44,13 +44,15 @@
 <li>Naar: geeft de bestemming aan (verplicht)</li>
 <li>Via: geeft een tussenstop aan</li>
 <li>Op: geeft de vertrekdatum aan</li>
-<li>Om: geeft de vertrektijd aan</li>
+<li>Om: geeft de vertrektijd aan (als alternatief werkt 'vertrek:' ook)</li>
+<li>Aankomst: geeft de aankomsttijd aan</li>
 </ol>
 
 <p>Je kan deze steekwoorden in elke volgorde gebruiken. Zo worden zowel 'van: Utrecht naar: Amersfoort' als 'naar: Amersfoort van: Utrecht' goed herkend.
 Voor elk reisplan moet een vertreklocatie ('van:') en een bestemming ('naar:') worden aangegeven. De andere steekwoorden kunnen worden weggelaten.
 Als je geen tijd en geen datum invult wordt de reis 'nu' gepland. Vul je geen datum in maar wel een tijd, dan wordt de reis gepland op dezelfde
-dag om de aangegeven tijd. (En vul je geen tijd in maar wel een datum, dan wordt de reis gepland op dezelfde tijd op de aangegeven dag.)</p>
+dag om de aangegeven tijd. (En vul je geen tijd in maar wel een datum, dan wordt de reis gepland op dezelfde tijd op de aangegeven dag.) Geef je aan aankomsttijd op,
+dan hoef je geen vertrektijd meer aan te geven. </p>
 
 <p>De tijd aangeven kan in de vorm '20 uur 45' of in de vorm '20.25' of '20:45'. De datum aangeven kan in de vorm '19 augustus 2017' of in de vorm '19-08-2017' of '19.08.2017'.</p>
 
@@ -90,6 +92,7 @@ doorgestuurd naar het passende reisadvies op 9292ov.nl.</p>
 <a id="versiegeschiedenis" class="anchor" href="#versiegeschiedenis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versiegeschiedenis</h2>
 
 <ul>
+<li>v0.60: Reizen op aankomsttijd mogelijk. 'Vertrek:' toegevoegd als alternatief steekwoord voor 'om:'</li>
 <li>v0.51: Straatnamen waarin een of meerdere steekwoorden voorkomen worden nu ook herkend. Om dit op te lossen moeten steekwoorden in het reisplan met een dubbele punt geschreven worden (bijvoorbeeld 'van:')</li>
 <li>v0.40: Eerste publieke versie</li>
 </ul>
@@ -97,9 +100,7 @@ doorgestuurd naar het passende reisadvies op 9292ov.nl.</p>
 <h2>
 <a id="geplande-functies-en-bekende-problemen" class="anchor" href="#geplande-functies-en-bekende-problemen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Geplande functies en bekende problemen</h2>
 
-<ul>
-<li>Op dit moment is het alleen mogelijk om een reis te plannen met een bepaald <em>vertrek</em>moment. In de toekomst moet het ook mogelijk zijn om een reis te plannen met een bepaald <em>aankomst</em>moment.</li>
-</ul>
+<h2></h2>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/dimaba/ovextensie">OmniBus Reisplanner</a> is maintained by <a href="https://github.com/dimaba">dimaba</a>.</span>
